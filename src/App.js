@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import ComponentPage from './components/ComponentPage';
+import CounterPage from './components/CounterPage';
+import ShowProducts from './components/ShowProducts';
+import AdminShowProducts from './components/AdminShowProducts';
+import UserEmail from './components/UserEmail';
+import UserName from './components/UserName';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ComponentPage />
+      <br />
+      <CounterPage />
+      <br />
+      <ShowProducts />
+      <br />
+      <AdminShowProducts />
+      <br />
+      <UserEmail />
+      <UserName />
     </div>
   );
 }
